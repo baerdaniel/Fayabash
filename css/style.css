@@ -16,13 +16,15 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 a, a:visited {
   font-family: 'Naza', Helvetica, Arial, Sans-serif;
   font-weight: 600;
   text-decoration: none;
   color: #111;
   padding-bottom: 5px;
-  border-bottom: 1px solid #111;
+/*  border-bottom: 1px solid #111;*/
   -webkit-transition:all 0.2s;  
   -moz-transition:all 0.2s;  
   -o-transition:all 0.2s;  
@@ -31,6 +33,7 @@ a, a:visited {
 
 a:hover, a:active {
   border-bottom: 0;
+  color: #eee;
 /*  -webkit-transition:all 0.2s;  
   -moz-transition:all 0.2s;  
   -o-transition:all 0.2s;  
@@ -48,12 +51,41 @@ h1 {
 
 .container {
   position: fixed;
-  width: 800px;
-  top: 1em;
-  left: 1em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding :1em;
 }
 
 .contact {
+}
+
+a.facebook {
+  color: #3b5998;
+}
+
+a.twitter {
+  color: #00aced;
+}
+
+a.instagram{
+  color: #517fa4;
+}
+
+ a.vimeo {
+  color: #45bbff;
+}
+
+a.tumblr {
+  color: #32506d;
+}
+
+a.facebook:hover,
+a.twitter:hover,
+a.instagram:hover,
+a.vimeo:hover,
+a.tumblr:hover {
+  color: #eee;
 }
 
 .canvas {
@@ -79,10 +111,25 @@ h1 {
 .canvas img {
   height: 66vh;
   margin-top: 14vh;
-  -moz-box-shadow:  0px 0px 100% 0px #000000;
-  -webkit-box-shadow:  0px 0px 100% 0px #000000;
-  box-shadow:  0px 0px 100% 0px #000000;
 }
+
+
+.video-wrapper {
+  pointer-events: auto;
+  height: 0px;
+  width: 80%;
+  position: relative;
+  padding-bottom: 45%;
+  margin: 14vh auto auto auto;
+}
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
 
 .caption {
   margin-top: 10px;
@@ -149,12 +196,6 @@ input {
     float: left;
     height: auto;
     margin-top: 70px;
-  }
-
-  .video-wrapper {
-    height: 0px;
-    width: 100%;
-    padding-bottom: 45%;
   }
 
   .contact, input, button {
