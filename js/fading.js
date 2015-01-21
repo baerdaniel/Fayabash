@@ -1,29 +1,7 @@
 
 
-
-  /* Fade in content when loaded */
-
-  /*$('.hide').css("color", "#fff");*/
-/*  $('.hide').animate({
-    color: "#111"
-  }, 1500 );*/
-
-/*$(document).ready(function(){
-  $( ".hide" ).animate({ "color": "#111" }, "5000" );
-});*/
-
-
-
-
-
-
 $(document).ready(function(){
 
-
-
-$('.hide').click(function(){
-  $( this ).css( "color", "#111" );
-});
 
   $(window).scroll(function(){
     if ($(window).width() > 700) {
@@ -35,10 +13,10 @@ $('.hide').click(function(){
 
       $('canvas').hide();
 
-      if( y < 1*delta ){
+      if( y < 0.1*delta ){
         $('.canvas').fadeOut(150);
       } 
-      if( y >= 1*delta && y < 2*delta ){
+      if( y >= 0.1*delta && y < 2*delta ){
         $('.image1').fadeIn(s);
         $('.canvas').fadeIn(s);
       } 
