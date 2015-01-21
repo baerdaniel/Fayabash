@@ -1,15 +1,21 @@
-<style type="text/css">
+
 
 @font-face {
 }
 
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
 body, html {
   font-family: 'Miller', serif;
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 36px;
   width: 100%;
   height: 7600px;
   margin: 0;
-  line-height: 46px;
   color: #111;
   background-color: #fff;
   -webkit-font-smoothing: antialiased; 
@@ -31,6 +37,11 @@ a, a:visited {
   transition:all 0.2s;
 }
 
+.social a, .social a:visited {
+  font-family: 'Miller', serif;
+  font-weight: normal;
+}
+
 a:hover, a:active {
   border-bottom: 0;
   color: #eee;
@@ -41,7 +52,9 @@ a:hover, a:active {
 }
 
 h1 {
+  display: inline-block;
   font-size: 1em;
+  margin: 0;
 }
 
 .title {
@@ -54,7 +67,11 @@ h1 {
   width: 100%;
   top: 0;
   left: 0;
-  padding :1em;
+  padding: 1em 7em 0 1em;
+}
+
+.about > div {
+  margin-bottom: 1em;
 }
 
 .contact {
@@ -212,4 +229,18 @@ input {
 ::-moz-selection{ background: #000; color: #fff; text-shadow: none; }
 ::selection { background: #000; color:#fff; text-shadow: none; } 
 
-</style>
+
+/* Disappear */
+
+/*.hide {
+  color: #fff;
+  -webkit-transition: color 0.2s;  
+  -moz-transition: color 0.2s;  
+  -o-transition: color 0.2s;  
+  transition: color 0.2s;
+}
+*/
+
+
+
+

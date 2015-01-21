@@ -1,4 +1,30 @@
+
+
+
+  /* Fade in content when loaded */
+
+  /*$('.hide').css("color", "#fff");*/
+/*  $('.hide').animate({
+    color: "#111"
+  }, 1500 );*/
+
+/*$(document).ready(function(){
+  $( ".hide" ).animate({ "color": "#111" }, "5000" );
+});*/
+
+
+
+
+
+
 $(document).ready(function(){
+
+
+
+$('.hide').click(function(){
+  $( this ).css( "color", "#111" );
+});
+
   $(window).scroll(function(){
     if ($(window).width() > 700) {
 
